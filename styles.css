@@ -16,10 +16,11 @@ nav .mainMenu {
     display: flex;
     list-style: none;
 }
-nav .mainMenu li a{
+nav .mainMenu a{
     font-weight: bold;
     display: inline-block;
     padding: 15px;
+    margin-top: 30px;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -27,6 +28,34 @@ nav .mainMenu li a{
 }
 nav .mainMenu li a:hover{
     background: rgb(200, 200, 200);
+    margin-top: 30px;
+}
+.donate{
+    height: 60px;
+    border-radius: 40px;
+    font-weight: bold;
+    display: flex;
+    padding: 15px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    background: #193485;
+}
+.donate:hover{
+    animation: animate 7s linear infinite;
+    background: linear-gradient(135deg, yellow, blue, red);
+    background-size:400%;
+    color: white;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position:400%;
+    }
 }
 nav .openMenu{
     font-size: 2rem;
@@ -77,7 +106,7 @@ nav .logo{
     }
     .icons i{
         display: inline-block;
-        padding: 12px;
+        padding: 20px;
     }
 }
 
