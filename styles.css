@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a{
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover{
+    background: rgb(200, 200, 200);
+}
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: #4267B2}
+.fa-instagram:hover {color: #bc2a8d}
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1024px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        background: white;
+        transition: top 1s ease-in-out;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color:rgb(200, 200, 200);
+        font-size: 1.6rem;
+    }
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
+
